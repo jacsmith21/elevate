@@ -1,2 +1,2 @@
 from elevate import file
-from elevate import logging
+from elevate import pylog

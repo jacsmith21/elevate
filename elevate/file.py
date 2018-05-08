@@ -3,9 +3,9 @@ import sys
 
 import requests
 
-from elevate import logging
+from elevate import pylog
 
-LOGGER = logging.get_logger(__name__)
+LOGGER = pylog.get_logger(__name__)
 
 
 def download(url, dst):
