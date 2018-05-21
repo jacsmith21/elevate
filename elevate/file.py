@@ -17,6 +17,7 @@ def download(url, dst):
     if os.path.isfile(dst):
         return
 
+    os.makedirs(os.path.dirname(dst), exist_ok=True)
     with open(dst, 'wb') as f:
         LOGGER.info('Downloading %s to %s' % (url, dst))
         response = requests.get(url, stream=True)
